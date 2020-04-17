@@ -1,4 +1,4 @@
-Adrian Cottais
+Adrian Cottais | 2020 | ITMI Sept-Îles
 # Contrôle d’une lampe avec The Things Network et Cayenne:
 
 **Matériel requis:**
