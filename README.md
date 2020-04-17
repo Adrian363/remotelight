@@ -75,7 +75,6 @@ Une fois notre carte enregistrée, on peut la visualiser toujours dans la partie
 
 ### Contrôle via TTN
 
-**Le code source utilisé se trouve en intégralité sur ce [lien](https://)**.
 
 Comme notre carte est correctement enregistrée, nous allons maintenant la configurer pour allumer et éteindre la lampe depuis TTN dans un premier temps.
 
@@ -101,7 +100,7 @@ notre programme.
 
 ### **Explication des principales lignes:**
 
-- **loraSerial(57600):** Inialisation de la transmission LoRa à 57600 bits/s
+- **loraSerial(57600):** Initialisation de la transmission LoRa à 57600 bits/s
 - **debugSerial(9600):** Initialisation de la console Arduino
 - **ttn.onMessage(message):** Lors de la réception d'un message, on va utiliser la fonction "message" pour traiter les données.
 - **ttn.showStatus:** Permet de voir l'ensemble des informations sur nos canaux de transmission
@@ -162,7 +161,7 @@ Dans un premier temps, il faut d'abord installer et ajouter la librairie à notr
 
 Les constantes "appEUI" et "appKey" reste les mêmes étant donné que l'on va utiliser la même application sur TTN. De même pour le plan de fréquences.
 
-Nous allons nous intéresser dans un premier au void setup() de notre programme:
+Nous allons nous intéresser dans un premier temps au void setup() de notre programme:
 ![](https://i.imgur.com/hBkcCkO.png)
 
 On déclare dans un premier temps une variable lpp de 3 octets de type Cayenne LPP qui nous servira pour stocker et envoyer nos données.
